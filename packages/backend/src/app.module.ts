@@ -8,7 +8,6 @@ import { UsersModule } from './users/users.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    /*
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.REPOSITORY_URI,
@@ -16,7 +15,6 @@ import { UsersModule } from './users/users.module';
       logging: true,
     }),
     UsersModule,
-    */
   ],
 })
 export class AppModule { }
