@@ -5,11 +5,14 @@ import {
   Res,
   HttpStatus,
 } from '@nestjs/common';
+
+import { Response } from 'express';
+
+import { APIResponseError } from '@inssoft/core/domain/users';
+
 import { CreateUserDto } from './dto/create-user.dto';
 import { User } from './user.entity';
 import { UsersService } from './users.service';
-
-import { Response } from 'express';
 
 @Controller('users')
 export class UsersController {
@@ -22,8 +25,9 @@ export class UsersController {
       return response
         .status(HttpStatus.BAD_REQUEST)
         .json({
+          'code': 'data_is_invalid',
           'message': 'The data to create a new user is invalid',
-        });
+        } as APIResponseError);
     }
 
     // Create the new user
@@ -41,15 +45,17 @@ export class UsersController {
           return response
             .status(HttpStatus.BAD_REQUEST)
             .json({
+              'code': 'user_exists',
               'message': 'The user exists',
-            });
+            } as APIResponseError);
         }
 
         return response
           .status(HttpStatus.INTERNAL_SERVER_ERROR)
           .json({
+            'code': 'server_error',
             'message': 'There is an error in the server',
-          });
+          } as APIResponseError);
       });
   }
 }
