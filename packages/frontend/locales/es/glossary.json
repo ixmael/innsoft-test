@@ -1,0 +1,9 @@
+{
+    "email": "correo electrónico",
+    "username": "nombre de usuario",
+    "sex": "sexo",
+    "male": "hombre",
+    "female": "mujer",
+    "clear": "limpiar",
+    "register": "registrarse"
+}
