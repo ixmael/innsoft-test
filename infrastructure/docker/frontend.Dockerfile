@@ -12,5 +12,7 @@ RUN yarn install \
 FROM node:18-alpine
 COPY --from=buildBase /packages /packages
 
+WORKDIR /packages/frontend
+
 ENTRYPOINT [ "node" ]
 CMD [ ".output/server/index.mjs" ]
