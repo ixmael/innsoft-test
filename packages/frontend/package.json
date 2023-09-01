@@ -2,6 +2,12 @@
   "name": "@innsoft/frontend",
   "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "author": {
+		"name": "ixmael",
+		"email": "hola@irm.mx",
+		"url": "https://irm.mx"
+	},
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -14,6 +20,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/i18n": "^8.0.0-rc.3",
     "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5",
     "bootstrap-vue": "^2.23.1"
   },
   "devDependencies": {

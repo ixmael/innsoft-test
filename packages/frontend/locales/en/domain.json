@@ -1,0 +1,25 @@
+{
+    "test": {
+        "title": "This is the implementation of the test",
+        "description": {
+            "introduction": "This is the Inssoft test implementation.",
+            "content": "You can register a new user in the",
+            "users": "users section",
+            "conclusion": "The repository of this is ",
+            "repository": "Inssoft github repository"
+        }
+    },
+    "users": {
+        "title": "users",
+        "register": "register",
+        "addNewUser": "Add a new user",
+        "errorsOnCreation": {
+            "UnkwonError": "unknown error",
+            "APIError": "there is an error in the server",
+            "IncorrectUserData": "your data is incorrect",
+            "UserExistsData": "the email was registered"
+        },
+        "succesfulCreated": "the user was created",
+        "registerNewDetail": "create a new user"
+    }
+}

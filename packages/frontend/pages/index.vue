@@ -1,11 +1,3 @@
-<script setup>
-definePageMeta({
-    layout: 'default',
-});
-</script>
-
-
-
 <template>
     <NuxtLayout name="default">
         <template #header>
@@ -13,8 +5,16 @@ definePageMeta({
         </template>
 
         <section>
-            <p v-for="text in $t('domain.test.description', { returnObjects: true })">
-                {{ text }}
+            <p>{{ $t('domain.test.description.introduction') }}</p>
+            <p>
+                {{ $t('domain.test.description.content') }}
+                <NuxtLink to="/users">
+                    {{ $t('domain.test.description.users') }}
+                </NuxtLink>.
+            </p>
+            <p>
+                {{ $t('domain.test.description.conclusion') }}
+                <a href="https://github.com/ixmael/innsoft-test">{{ $t('domain.test.description.repository') }}</a>.
             </p>
         </section>
     </NuxtLayout>

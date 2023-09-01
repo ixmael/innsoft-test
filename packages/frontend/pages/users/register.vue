@@ -44,7 +44,7 @@ const handleSubmit = () => {
         <div>
             <form @submit.prevent="handleSubmit">
                 <div class="mb-3 row">
-                    <label for="username" class="col-sm-2 col-form-label">{{ $t('glossary.email') }}</label>
+                    <label for="email" class="col-sm-2 col-form-label">{{ $t('glossary.email') }}</label>
                     <div class="col-sm-10">
                         <input id="email" class="form-control" type="text" :value="email"
                             @input="event => email = event.target.value">
@@ -59,25 +59,31 @@ const handleSubmit = () => {
                     </div>
                 </div>
 
-                <div class="form-check">
-                    <label for="username" class="col-sm-2 col-form-label">{{ $t('glossary.sex') }}</label>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="female" value="female" v-model="sex" />
-                        <label for="female">{{ $t('glossary.female') }}</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" id="male" value="male" v-model="sex" />
-                        <label for="male">{{ $t('glossary.male') }}</label>
+                <div class="mb-3 row">
+                    <label   class="col-sm-2 col-form-label">{{ $t('glossary.sex') }}</label>
+                    <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" value="female" v-model="sex" />
+                            <label for="female">{{ $t('glossary.female') }}</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="male" value="male" v-model="sex" />
+                            <label for="male">{{ $t('glossary.male') }}</label>
+                        </div>
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-light" @click="clear">
-                    {{ $t('glossary.clear') }}
-                </button>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-secondary" @click="clear">
+                        {{ $t('glossary.clear') }}
+                    </button>
 
-                <button type="submit" class="btn btn-primary">
-                    {{ $t('glossary.register') }}
-                </button>
+                    <button type="submit" class="btn btn-primary">
+                        {{ $t('glossary.register') }}
+                    </button>
+                </div>
+
+
 
                 <div v-if="isSuccesfulCreated">
                     {{ $t('domain.users.succesfulCreated') }}

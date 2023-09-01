@@ -1,24 +1,19 @@
-<script setup>
-definePageMeta({
-    layout: 'default',
-});
-</script>
-
 <template>
-    <!--
-    <NuxtLayout :name="layout">
+    <NuxtLayout name="default">
         <template #header>
-            <h1>Usuarios</h1>
+            <h1>{{ $t('domain.users.title') }}</h1>
         </template>
-    </NuxtLayout>
-    -->
 
-    <div>
-        <h2>{{ $t('domain.users.title') }}</h2>
-        <ul>
-            <li>
-                <NuxtLink to="/users/register">{{ $t('domain.users.register') }}</NuxtLink> detalle para el registro
-            </li>
-        </ul>
-    </div>
+        <div>
+            <p></p>
+            <ul>
+                <li>
+                    <NuxtLink to="/users/register">
+                        {{ $t('domain.users.register') }}
+                    </NuxtLink>:
+                    {{ $t('domain.users.registerNewDetail') }}.
+                </li>
+            </ul>
+        </div>
+    </NuxtLayout>
 </template>
