@@ -1,7 +1,7 @@
 # Innsoft fullstack test
 This is the implementation required for the vacancy process.
 
-You can visit the [live demo of this test](https://innsoft.irm.mx).
+You can visit the [live demo of this test](https://inssoft.irm.mx).
 
 ## Applications
 
