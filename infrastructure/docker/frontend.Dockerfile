@@ -12,7 +12,5 @@ RUN yarn install \
 FROM node:18-alpine
 COPY --from=buildBase /packages /packages
 
-# ENTRYPOINT [ "node" ]
-# CMD [ ".output/server/index.mjs" ]
-ENTRYPOINT [ "tail" ]
-CMD [ "-f", "/dev/null" ]
+ENTRYPOINT [ "node" ]
+CMD [ ".output/server/index.mjs" ]
