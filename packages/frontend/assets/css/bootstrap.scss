@@ -1,0 +1,18 @@
+/*
+$theme-colors: (
+  'primary': #903ff9,
+  'secondary': #833bec,
+  'success': #1ce1ac,
+  'info': #ff7d50,
+  'warning': #ffbe0b,
+  'danger': #ff007f,
+  'light': #c0ccda,
+  'dark': #001738,
+);
+*/
+
+@import 'bootstrap/scss/bootstrap';
+
+#header {
+  text-transform: uppercase;
+}

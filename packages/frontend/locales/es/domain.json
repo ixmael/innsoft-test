@@ -1,0 +1,25 @@
+{
+    "test": {
+        "title": "Implementación del test",
+        "description": {
+            "introduction": "Este sitio es la implementación del frontend de la prueba de Innsoft.",
+            "content": "Para registrar un nuevo usuario tiene que ir a la",
+            "users": "sección de usuarios",
+            "conclusion": "El repositorio de este sitio es ",
+            "repository": "repositorio github de Inssoft"
+        }
+    },
+    "users": {
+        "title": "Usuarios",
+        "register": "registrarse",
+        "addNewUser": "Crear un nuevo usuario",
+        "errorsOnCreation": {
+            "UnkwonError": "error desconocido",
+            "APIError": "el servidor tiene un error",
+            "IncorrectUserData": "sus datos son incorrectos",
+            "UserExistsData": "ya está registrado su correo electrónico"
+        },
+        "succesfulCreated": "se creó el usuario de forma exitosa",
+        "registerNewDetail": "crear un nuevo usuario"
+    }
+}
