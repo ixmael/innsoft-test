@@ -1,0 +1,12 @@
+// The environment for the project
+// (optional)
+// default: production
+environment = "develop"
+
+// This is the root password
+// (optional)
+// repository_root_password = "set your strength password"
+
+// This is the path to persist the database data
+// optional
+// repository_data = "/absolute/path/to/persist/the/data"
