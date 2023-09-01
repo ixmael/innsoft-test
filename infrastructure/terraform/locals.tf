@@ -1,4 +1,4 @@
 locals {
   # Project
-  project_name = "innsoft"
+  project_name = "inssoft"
 }
